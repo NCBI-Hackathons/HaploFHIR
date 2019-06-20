@@ -1,6 +1,8 @@
 # VarHMMin?
 
 
+Genome wide association studies have successfully identified many associated genetic loci with complex traits and disease. However, only a small number of biologically causal variants within these loci have been identified. In order to aid in the discovery process to identify etiological variants, we provide a tool to merge GWAS results with a much larger catalog of variants from whole genome sequencing. 
+
 ### Open-CRAVAT annotators used:
 - Vista Enhancer Browser
 - VEST
