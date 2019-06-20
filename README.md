@@ -5,15 +5,13 @@ Genome-wide association studies have successfully identified many associated gen
 
 We hypothesize that there are combinatorial and spatial patterns in the way that variants are distributed thoughout the genome and that this information could be used to infer the pathogenic potential in genomic regions.
 
-As such, we aim to create an annotator which will identify 
+As such, we aim to create an annotator which will identify genomic regions or kernels that have similar variant properties. The properties which we will be including are those that are likely to have an effect on the pathogenicity of a variant in a genomic region including: cross-species conservation, regulatory potential of the region, SNP-density, and allele frequencies.
 
 ## Approach 
 
-In order to identify regions of potential pathogenic interest, we 
 
-We will be using Alzheimer's GWAS data as a test case for this general tool. Variant data from whole-genome-sequencing will be pulled from gnomAD and annotated using Open-CRAVAT. 
+We will be using Alzheimer's GWAS data as a test case for this general tool. Variant data from whole-genome-sequencing will be pulled from gnomAD and annotated using Open-CRAVAT. The following Open-CRAVAT annotators will be used:
 
-### Open-CRAVAT annotators used:
 - Vista Enhancer Browser
 - VEST
 - Repeat Sequences
@@ -24,3 +22,6 @@ We will be using Alzheimer's GWAS data as a test case for this general tool. Var
 - gnomAD
 - dbSNP
 - COSMIC
+
+
+This data will be input into a HMM that will learn the patterns of 
