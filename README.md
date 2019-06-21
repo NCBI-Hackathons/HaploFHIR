@@ -17,6 +17,9 @@ As such, we aim to create an annotator which will identify genomic regions or ke
 ![flowchart](./images/example_region_plot.png)
 
 
+![flowchart](./images/webtool_screenshot.png)
+
+
 
 We will be using Alzheimer's GWAS data as a test case for this general tool. Variant data from whole-genome-sequencing will be pulled from gnomAD and annotated using Open-CRAVAT. The following Open-CRAVAT annotators will be used:
 
