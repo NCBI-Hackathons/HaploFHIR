@@ -53,10 +53,14 @@ def get_intervals(GWAS_infile, Interval_outfile, gNOMAD_outfile,  pval_thresh, w
 	interval_file.write(output.decode('utf-8'))
 	interval_file.close()
 	
-	gNOMAD_outfile=open(gNOMAD_outfile,'w')
-	gNOMAD_call=subprocess.run(["tabix",gNOMAD_db,"-B",Interval_outfile],capture_output=True)
-	gNOMAD_stdout=gNOMAD_call.stdout
-	gNOMAD_outfile.write(gNOMAD_stdout.decode('utf-8'))
+	intervals_input=open(Interval_outfile,'r')
+	gNOMAD_outfile=open(gNOMAD_outfile,'w')	
+	for line in intervals_input:
+		line = line.strip().split()
+		location = line[0]+':'+line[1]+'-'+line[2]
+		gNOMAD_call=subprocess.run(["tabix",gNOMAD_db,location],capture_output=True)
+		gNOMAD_stdout=gNOMAD_call.stdout
+		gNOMAD_outfile.write(gNOMAD_stdout.decode('utf-8'))
 	gNOMAD_outfile.close()
 	
 
