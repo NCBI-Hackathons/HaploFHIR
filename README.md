@@ -25,5 +25,6 @@ We will be using Alzheimer's GWAS data as a test case for this general tool. Var
 - dbSNP
 - COSMIC
 
-
 This data will be input into a HMM that will learn the patterns of
+
+This web interface will be used to download gNOMAD regions for GWAS studies.
