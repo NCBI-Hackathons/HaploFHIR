@@ -7,4 +7,8 @@ LDlookup (Purcell)
 
 WhatsHap (Marschall)
 
+## Code framework
+
+### Will port the haplocravat framework here (on a branch now?).  
+
 
