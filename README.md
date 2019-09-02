@@ -39,6 +39,9 @@ C. Will figure out to extract gene level haplotypes from graphs and put them int
 
 ###### From PGP. Much of the data are vcf-type files with GRCh36 or GRCh37 coordinates.  Will need to remap.  
 
+Downloaded standalone remapper from NCBI here: ftp://ftp.ncbi.nlm.nih.gov/pub/remap/stand_alone/mac/
+
+
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
 ##### Capture Intermediate number for test cases
