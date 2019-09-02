@@ -35,12 +35,13 @@ C. Will figure out to extract gene level haplotypes from graphs and put them int
 
 #### Based on R Package
 
+##### NOTE: HaploBlocker is NOT recommended to work on macOS.  After two hours of hacking at it, I have confirmed this assertion.  Will put in a github issue as a feature request.  
+
 ##### Data: 1,000 individuals x 1 million SNPs
 
 ###### From PGP. Much of the data are vcf-type files with GRCh36 or GRCh37 coordinates.  Will need to remap.  
 
-Downloaded standalone remapper from NCBI here: ftp://ftp.ncbi.nlm.nih.gov/pub/remap/stand_alone/mac/
-
+Downloaded standalone remapper from NCBI here: ftp://ftp.ncbi.nlm.nih.gov/pub/remap/stand_alone/
 
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
