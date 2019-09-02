@@ -43,6 +43,12 @@ C. Will figure out to extract gene level haplotypes from graphs and put them int
 
 Downloaded standalone remapper from NCBI here: ftp://ftp.ncbi.nlm.nih.gov/pub/remap/stand_alone/
 
+##### Instead of converting, then remapping, used the open-cravat converter.
+
+##### Will import 23 and me and output in GRCh38
+
+##### Now have .vcf prepared for HaploBlocker
+
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
 ##### Capture Intermediate number for test cases
