@@ -13,6 +13,8 @@ HaploBlocker (Torsten Pook)
 
 + Learned about this one at the biohackathon!
 
++ Tested on corn!
+
 ## Code framework
 
 ![Alt text](https://github.com/NCBI-Hackathons/HaploFHIR/blob/master/2019_Biohackathon_BB.png)
