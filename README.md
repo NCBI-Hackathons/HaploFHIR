@@ -27,43 +27,43 @@ B. Will think about how to extract reportable paths ("lava") from graphs, and fi
 
 C. Will figure out to extract gene level haplotypes from graphs and put them into FHIR (Thursday, Friday)
 
-### Specific workplan details
+## Specific workplan details
 
-#### HaploBlocker Test Cases
+### HaploBlocker Test Cases
 
-##### Ben Busby is interested in generating Haplotype blocks from Human SNP arrays for clinical studies.  These can be reused as a VGBrowser test case.
+#### Ben Busby is interested in generating Haplotype blocks from Human SNP arrays for clinical studies.  These can be reused as a VGBrowser test case.
 
-##### Based on R Package
+#### Based on R Package
 
-###### Data: 1,000 individuals x 1 million SNPs
+##### Data: 1,000 individuals x 1 million SNPs
 
-###### Settings: Window Size 20, Differences in Windows Ignored 0, 
+##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
-###### Capture Intermediate number for test cases
+##### Capture Intermediate number for test cases
 
-####### Number of starting signatures
+###### Number of starting signatures
 
-####### Signatures present at [1]  [10]  [100]  [1000] [100000]
+###### Signatures present at [1]  [10]  [100]  [1000] [100000]
 
-###### Run simple merge
+##### Run simple merge
 
-####### Collect same numbers again
+###### Collect same numbers again
 
-###### Run Split Groups, Simple Merge, Neglect Nodes(5)
+##### Run Split Groups, Simple Merge, Neglect Nodes(5)
 
-####### Collect same numbers again
+###### Collect same numbers again
 
-###### Do Block Identification?
+##### Do Block Identification?
 
-####### How many blocks Identified?
+###### How many blocks Identified?
 
-###### Length of first block?
+##### Length of first block?
 
-###### Number of individuals in first block?
+##### Number of individuals in first block?
 
-###### Do Block Filtering.  What is the MCMB setting?
+##### Do Block Filtering.  What is the MCMB setting?
 
-###### How many blocks after Filter?
+##### How many blocks after Filter?
 
 
 
