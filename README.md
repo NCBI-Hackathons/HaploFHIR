@@ -37,6 +37,8 @@ C. Will figure out to extract gene level haplotypes from graphs and put them int
 
 ##### Data: 1,000 individuals x 1 million SNPs
 
+###### From PGP. Much of the data are vcf-type files with GRCh36 or GRCh37 coordinates.  Will need to remap.  
+
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
 ##### Capture Intermediate number for test cases
