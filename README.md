@@ -11,8 +11,11 @@ WhatsHap (Marschall)
 
 SHAPE-IT
 
-BEAGLE 4.1?
++ Prephasing imputation with PLINK
 
+BEAGLE 5.1
+
++ Also requires PLINK
 
 
 ###### If you have to, just use an LD calculator as an approximation?
