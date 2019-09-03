@@ -7,6 +7,8 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 Step 1: Find a clever way to feed the tons of MAF info you have into plink!
 
++ You might be able to use GATK's VariantstoBinaryPed
+
 WhatsHap (Marschall)
 
 + Mostly for read-backed phasing
@@ -148,6 +150,8 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
    
 
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
+
+###### Window size 20 seems awful small for this purpose.  
 
 ##### Capture Intermediate number for test cases
 
