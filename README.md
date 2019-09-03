@@ -44,7 +44,7 @@ HaploBlocker (Torsten Pook)
 
 A. Will use Haploblocker to generate additional input data for graph genomes team (Monday, Tuesday)
 
-B. Will think about how to extract reportable paths ("lava") from graphs, and figure out when they are touched by short and long reads (Wednesday)
+B. Will think about how to extract reportable paths ("lava") from graphs, and figure out when they are touched by short and long reads (Wednesday).  **Just start with ClinVar SNPs that are asserted pathogenic and have multiple stars**
 
 C. Will figure out to extract gene level haplotypes from graphs and put them into FHIR (Thursday, Friday)
 
