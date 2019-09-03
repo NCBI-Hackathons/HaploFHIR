@@ -49,6 +49,46 @@ Downloaded standalone remapper from NCBI here: ftp://ftp.ncbi.nlm.nih.gov/pub/re
 
 ##### Now have .vcf prepared for HaploBlocker
 
+###### Cravat command: cravat ./example5 -t vcf --cleanup 
+
+###### Gives a nicely annotated .vcf 
+
+###### List of annotators
+
+Name                          Title                               Type               Version       Data source ver    Size        
+23andme-converter             23andMe Converter                   converter          1.0.4                            6.0 GB      
+ancestrydna-converter         AncestryDNA Converter               converter          1.0.4                            6.0 GB      
+clinvar                       ClinVar                             annotator          2019.08.23    2019.01.02         89.7 MB     
+cravat-converter              Cravat Converter                    converter          1.0.4                            13.6 kB     
+dbsnp                         dbSNP                               annotator          151.0.9       v151               27.0 GB     
+dbsnp-converter               dbSNP Converter                     converter          1.0.1                            30.7 GB     
+excelreporter                 Excel Reporter                      reporter           1.0.5                            1.5 MB      
+gnomad                        gnomAD                              annotator          2.1.8         v2.1               17.4 GB     
+gnomad_gene                   gnomAD Gene                         annotator          2.1.8         v2.1               10.2 MB     
+gtex                          GTEx                                annotator          7.0.3         v7                 14.7 MB     
+gwas_catalog                  GWAS Catalog                        annotator          1.0.0                            39.0 MB     
+hg38                          UCSC hg38 Gene Mapper               mapper             1.2.7                            7.2 GB      
+ncbigene                      NCBI Gene                           annotator          2019.08.02    2019.03.23         13.7 MB     
+oldcravat-converter           OldCravat Converter                 converter          1.0.2                            12.4 kB     
+pubmed                        PubMed                              annotator          1.1.4                            977.3 kB    
+tagsampler                    Tag Sampler                         postaggregator     1.1.0                            6.9 kB      
+textreporter                  Text Reporter                       reporter           1.0.5                            8.5 kB      
+thousandgenomes               1000 Genomes                        annotator          4.0.5         Phase 3            5.3 GB      
+thousandgenomes_group         1000 Genomes                        group              3.1.0         Phase 3            17.7 kB     
+uk10k_cohort                  UK10k Cohorts                       annotator          3.5.9         dbNSFP v4.0b1      16.4 MB     
+uniprot                       UniProt                             annotator          2019.08.22    201809             706.2 kB    
+vcf-converter                 VCF Converter                       converter          1.1.6                            44.1 kB     
+vcfinfo                       VCF Info                            postaggregator     1.1.4                            8.7 kB      
+vcfreporter                   VCF Reporter                        reporter           1.0.8                            40.3 kB     
+wgbase                        Base information                    webviewerwidget    1.0.8                            3.4 kB      
+wgcircossummary               Circos Summary                      webviewerwidget    1.1.7                            622.8 kB    
+wgcodingvsnoncodingsummary    Coding vs Noncoding Summary         webviewerwidget    1.0.6                            3.1 kB      
+wggosummary                   Gene Ontology Summary               webviewerwidget    1.0.8                            10.6 MB     
+wglollipop                    Protein diagram                     webviewerwidget    1.1.8                            73.2 MB     
+wgnote                        Note                                webviewerwidget    1.0.3                            6.0 kB      
+wgsosamplesummary             Sequence Ontology Sample Summary    webviewerwidget    1.1.8                            15.6 kB     
+wgsosummary                   Sequence Ontology Summary           webviewerwidget    1.1.3                            3.8 kB 
+
 ##### Settings: Window Size 20, Differences in Windows Ignored 0, 
 
 ##### Capture Intermediate number for test cases
