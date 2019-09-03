@@ -5,6 +5,8 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 ### Phasing
 
+Step 1: Find a clever way to feed the tons of MAF info you have into plink!
+
 WhatsHap (Marschall)
 
 + Mostly for read-backed phasing
