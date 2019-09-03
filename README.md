@@ -1,13 +1,27 @@
 # HaploFHIR
 A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them to EMRs
 
-## Possibilities for LD Calculators
+## Possibilities for Phasing and HaploBlock Generators
 
-LDlookup (Purcell)
+### Phasing
 
 WhatsHap (Marschall)
 
-LDlink (NCI) 
++ Mostly for read-backed phasing
+
+SHAPE-IT
+
+BEAGLE
+
+
+
+###### If you have to, just use an LD calculator as an approximation?
+
+LDlink (NCI)
+
+ldLookup
+
+### Block Generation
 
 HaploBlocker (Torsten Pook)
 
@@ -95,7 +109,9 @@ library(HaploBlocker)
 
 library(vcfR)
 
-###### Import vcfs
+###### Import vcfs and Convert to Matrix
+
+###### Calculate Blocks
 
 Arguments for block_calculation:
 
