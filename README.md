@@ -21,6 +21,8 @@ BEAGLE 5.1
 
 + Also requires PLINK
 
+** Will probably use genipe -- a combination of plink, shapeit and impute2 **
+
 
 ###### If you have to, just use an LD calculator as an approximation?
 
