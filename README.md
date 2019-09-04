@@ -1,7 +1,7 @@
 # HaploFHIR
 A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them to EMRs
 
-# Using p53 as an example for toxic paths in graphs
+# Using p53 as an example to define toxic paths in graphs
 ## Scroll down
 
 ## Possibilities for Phasing and HaploBlock Generators
