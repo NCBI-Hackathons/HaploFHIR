@@ -1,6 +1,9 @@
 # HaploFHIR
 A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them to EMRs
 
+# Using p53 as an example for toxic paths in graphs
+## Scroll down
+
 ## Possibilities for Phasing and HaploBlock Generators
 
 ### Phasing
@@ -219,6 +222,8 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
 ##### Do Block Filtering.  What is the MCMB setting?
 
 ##### How many blocks after Filter?
+
+## Using p53 as an example for toxic paths in graphs
 
 
 
