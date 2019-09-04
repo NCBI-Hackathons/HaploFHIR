@@ -126,7 +126,8 @@ plink, IMPUTE2 and SHAPEIT
 
 ```./custom.sh```
 
-``` #!/usr/bin/env bash
+``` 
+#!/usr/bin/env bash
 # Changing directory
 cd /home/ben.busby/genipe_tutorial
 
