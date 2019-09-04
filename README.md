@@ -112,6 +112,20 @@ wgnote                        Note                                webviewerwidge
 wgsosamplesummary             Sequence Ontology Sample Summary    webviewerwidget    1.1.8                            15.6 kB     
 wgsosummary                   Sequence Ontology Summary           webviewerwidget    1.1.3                            3.8 kB 
 
+## Phasing
+
+First, convert to plink
+
++ Need an indexed genome with matching accessions
+
++ and a metadata file
+
+### Actual phasing
+
+Using Genipe, a combination of:
+
+plink, IMPUTE2 and SHAPEIT
+
 ## HaploBlocker
 
 library(HaploBlocker)
@@ -119,6 +133,8 @@ library(HaploBlocker)
 library(vcfR)
 
 ###### Import vcfs and Convert to Matrix
+
+
 
 ###### Calculate Blocks
 
