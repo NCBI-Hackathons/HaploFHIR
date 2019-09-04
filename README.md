@@ -116,15 +116,37 @@ wgsosummary                   Sequence Ontology Summary           webviewerwidge
 
 First, convert to plink
 
-+ Need an indexed genome with matching accessions
-
-+ and a metadata file
+``` ./plink2 --vcf foo3.vcf --allow-extra-chr 0 --make-bed --out foo3.test ```
 
 ### Actual phasing
 
 Using Genipe, a combination of:
 
 plink, IMPUTE2 and SHAPEIT
+
+```./custom.sh```
+
+``` #!/usr/bin/env bash
+# Changing directory
+cd /home/ben.busby/genipe_tutorial
+
+# Launching the imputation with genipe
+genipe-launcher \
+    --chrom autosomes \
+    --bfile /home/ben.busby/foo3.test \
+    --shapeit-bin /home/ben.busby/genipe_tutorial/bin/shapeit \
+    --impute2-bin /home/ben.busby/genipe_tutorial/bin/impute2 \
+    --plink-bin /home/ben.busby/genipe_tutorial/bin/plink \
+    --reference /home/ben.busby/genipe_tutorial/hg19/hg19.fasta \
+    --hap-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3_chr{chrom}.hap.gz \
+    --legend-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3_chr{chrom}.legend.gz \
+    --map-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/genetic_map_chr{chrom}_combined_b37.txt \
+    --sample-file /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3.sample \
+    --filtering-rules 'ALL<0.01' 'ALL>0' \
+    --report-title "Tutorial2" \
+    --report-number "Test2Report"
+    
+    ```
 
 ## HaploBlocker
 
