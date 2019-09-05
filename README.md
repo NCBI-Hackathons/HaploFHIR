@@ -1,7 +1,9 @@
 # HaploFHIR
 A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them to EMRs
 
-# Using p53 and K562 as an example to define toxic paths in graphs
+# Using p53 and K562 as examples to define toxic paths in graphs
+
+## It has become apparent that it doesnt make sense to load full haploblock complements into EMRs.  Without context they are meaningless.  What would be much more useful to port to FHIR are discrepacies between patient haploblocks and their population segment.  Now we are preparing the data to look at differences between a CML cell line and a cohort of normals, as a proof of principle.  
 
 ## Scroll down
 
