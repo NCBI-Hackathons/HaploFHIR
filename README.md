@@ -8,9 +8,50 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 ### Phasing
 
-Step 1: Find a clever way to feed the tons of MAF info you have into plink!
+#### Genipe -- a combination of plink, SHAPEIT and IMPUTE2 **
+
+#### Inputs
+
+Getting data into plink
+
+./plink2 --vcf Gencove_normal_p53_total.vcf --allow-extra-chr 0 --make-bed --out Gencove_normal_p53_total
+
+##### Chips
+
+Nice to have: Find a clever way to feed the tons of MAF info you have into plink!
 
 + You might be able to use GATK's VariantstoBinaryPed
+
+Currently, chips arent converting well into plink2-readable vcfs and theres also the multiallelic problem (potentially solveable with Beagle)
+
+##### Low coverage WGS (Gencove)
+
+**--> NOTE: You need large enough regions for phasing (i.e. one gene locus with a relatively low mutation rate does NOT cut it<--**
+
+Phasing works with genipe:
+
+e.g. for the beginning of chromosome 1 
+
+```
+genipe-launcher \
+    --chrom 1 \
+    --bfile /home/ben.busby/foo3.test \
+    --shapeit-bin /home/ben.busby/genipe_tutorial/bin/shapeit \
+    --impute2-bin /home/ben.busby/genipe_tutorial/bin/impute2 \
+    --plink-bin /home/ben.busby/genipe_tutorial/bin/plink \
+    --reference /home/ben.busby/genipe_tutorial/hg19/hg19.fasta \
+    --hap-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3_chr{chrom}.hap.gz \
+    --legend-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3_chr{chrom}.legend.gz \
+    --map-template /home/ben.busby/genipe_tutorial/1000GP_Phase3/genetic_map_chr{chrom}_combined_b37.txt \
+    --sample-file /home/ben.busby/genipe_tutorial/1000GP_Phase3/1000GP_Phase3.sample \
+    --filtering-rules 'ALL<0.01' 'ALL>0' \
+    --report-title "Tutorial2" \
+    --report-number "Test2Report"
+```
+
+##### One option at this point in the hackathon: build bcf files with SRA pileup, then phase straight from there!
+
+##### Other options for phasing (not used)
 
 WhatsHap (Marschall)
 
@@ -24,7 +65,6 @@ BEAGLE 5.1
 
 + Also requires PLINK
 
-** Will probably use genipe -- a combination of plink, shapeit and impute2 **
 
 
 ###### If you have to, just use an LD calculator as an approximation?
