@@ -1,7 +1,7 @@
 # HaploFHIR
 A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them to EMRs
 
-# Using p53 as an example to define toxic paths in graphs
+# Using p53 and K562 as an example to define toxic paths in graphs
 
 ## Scroll down
 
@@ -265,6 +265,14 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
 ##### How many blocks after Filter?
 
 ## Using p53 as an example for toxic paths in graphs
+
+## Using K562 as an example of what a cancer genome looks like in vg?
+
+###### Downloaded phased vcfs from: https://genome.cshlp.org/content/29/3/472.full
+
+###### Building into vg, then will return to phasing and blocking.  
+
+###### Block from vg (explicitly, not with haploblocker?)
 
 
 
