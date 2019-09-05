@@ -278,5 +278,6 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
 
 ###### Block from vg (explicitly, not with haploblocker?)
 
+##### We now have a simple pipeline to build paths in cancer that are not found in normal cohorts.  In theory we could do this with a lot of cancer samples e.g. 1 cohort from TCGA -- in fact you should try that from dbGaP (loading up from toolkit!)
 
 
