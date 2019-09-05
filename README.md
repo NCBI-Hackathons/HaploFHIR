@@ -13,6 +13,8 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 #### Genipe -- a combination of plink, SHAPEIT and IMPUTE2 **
 
+##### Will try Beagle for multiallelic chips
+
 #### Inputs
 
 Getting data into plink
