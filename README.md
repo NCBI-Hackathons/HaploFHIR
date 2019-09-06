@@ -19,7 +19,7 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 Getting data into plink
 
-./plink2 --vcf Gencove_normal_p53_total.vcf --allow-extra-chr 0 --make-bed --out Gencove_normal_p53_total
+./plink2 --vcf AncestryDNA.txt.vcf --allow-extra-chr 0 --sort-vars --make-bed --out AncestryDNA.cv
 
 ##### Chips
 
@@ -280,4 +280,8 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
 
 ##### We now have a simple pipeline to build paths in cancer that are not found in normal cohorts.  In theory we could do this with a lot of cancer samples e.g. 1 cohort from TCGA -- in fact you should try that from dbGaP (loading up from toolkit!)
 
+##### Stream of conciousness:
 
+We need a simple way to communicate to clinicians.  We can also immediately annotate SNPs by putting in dbsnp flankers or just annotating initial vcfs.  We can communicate this in RDF as metadata for given nodes.  For short read additions -- can simply map to existing haplotypes and they disappear into the graph.  For new ones.  Looking at cancer Haplotypes -- both repeatable and not.  Graphs as a framework for precision medicine! Write up the new plan for haplotype diffs.  
+
+New section -- how do we get there from here -- SNP-rdf, easy phasing, Haplotype counting
