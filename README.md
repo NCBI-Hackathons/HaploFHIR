@@ -197,7 +197,7 @@ genipe-launcher \
     --report-title "Tutorial2" \
     --report-number "Test2Report"
     
-    ```
+```
 
 ## HaploBlocker
 
