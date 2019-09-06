@@ -5,6 +5,15 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 ## It has become apparent that it doesnt make sense to load full haploblock complements into EMRs.  Without context they are meaningless.  What would be much more useful to port to FHIR are discrepacies between patient haploblocks and their population segment.  Now we are preparing the data to look at differences between a CML cell line and a cohort of normals, as a proof of principle.  
 
+## Building graphs
+
+For SNPs we are building graphs with vg
+
+For SVs we are building graphs with svaha
+
++ Example command: svaha2 -r ucsc.hg19.fasta -v ENCFF344VXT_DELs.vcf -m 1023 > ENCFF344VXT_DELs.gfa
+
+
 ## Scroll down
 
 ## Possibilities for Phasing and HaploBlock Generators
@@ -71,8 +80,6 @@ SHAPE-IT
 BEAGLE 5.1
 
 + Also requires PLINK
-
-
 
 ###### If you have to, just use an LD calculator as an approximation?
 
