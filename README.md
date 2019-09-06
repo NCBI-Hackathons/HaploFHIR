@@ -19,7 +19,9 @@ A Prototype to Detect Baseline Haploblocks from Popular SNP Chips and Port them 
 
 Getting data into plink
 
-./plink2 --vcf AncestryDNA.txt.vcf --allow-extra-chr 0 --sort-vars --make-bed --out AncestryDNA.cv
+./plink2 --vcf AncestryDNA.txt.vcf --allow-extra-chr 0 --make-bed --out AncestryDNA.cv
+
+Soon: ./plink2 --vcf AncestryDNA.txt.vcf --allow-extra-chr 0 --sort-vars --make-bed --out AncestryDNA.cv
 
 ##### Chips
 
