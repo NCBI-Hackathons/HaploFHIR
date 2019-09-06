@@ -287,3 +287,5 @@ function (dhm, window_sequence = NULL, window_size = 20, merging_error = 1,
 We need a simple way to communicate to clinicians.  We can also immediately annotate SNPs by putting in dbsnp flankers or just annotating initial vcfs.  We can communicate this in RDF as metadata for given nodes.  For short read additions -- can simply map to existing haplotypes and they disappear into the graph.  For new ones.  Looking at cancer Haplotypes -- both repeatable and not.  Graphs as a framework for precision medicine! Write up the new plan for haplotype diffs.  
 
 New section -- how do we get there from here -- SNP-rdf, easy phasing, Haplotype counting
+
+It would also be interesting to work FORGe into this analysis.  If one could just precompute on those SNPs it may speed up the graph mapping
